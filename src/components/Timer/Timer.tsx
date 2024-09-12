@@ -15,7 +15,6 @@ export const Timer: React.FC = () => {
       }, 1000)
     } else if (timeLeft === 0) {
       clearInterval(timerRef.current!)
-      alert('Время вышло')
     }
     return () => clearInterval(timerRef.current!)
   }, [isRunning, timeLeft])
@@ -34,13 +33,14 @@ export const Timer: React.FC = () => {
 
   const handleReset = useCallback(() => {
     setIsRunning(false)
-    setTimeLeft(180) // Сброс до 3 минут
+    setTimeLeft(180) // Reset to 3 minutes
   }, [])
 
   return (
     <div className={s.timerContainer}>
       <h1 className={s.timerDisplay}>{formatTime(timeLeft)}</h1>
       <MemoizedControls onStartPause={handleStartPause} onReset={handleReset} isRunning={isRunning}/>
+      <h1 className={s.timeFinished}>{<>Время вышло</>}</h1>
     </div>
   )
 }

@@ -26,8 +26,10 @@
 }
 
 @media (max-width: 600px) {
-    .timerButton {
-        padding: 8px 16px;
-        font-size: 1rem;
+    .controlsContainer {
+        .timerButton {
+            padding: 8px 16px;
+            font-size: 1rem;
+        }
     }
 }

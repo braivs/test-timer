@@ -7,17 +7,24 @@
     font-family: var(--font-family-primary), sans-serif;
     background-color: var(--color-main);
 
-    .timerDisplay {
+    .timerDisplay, .timeFinished {
         font-size: 4rem;
         color: var(--color-second);
+    }
+
+    .timerDisplay {
         margin-bottom: 20px;
+    }
+
+    .timeFinished {
+        height: 50px;
     }
 }
 
 @media (max-width: 600px) {
     .timerContainer {
-        .timerDisplay {
-            font-size: 3rem;
+        .timerDisplay, .timeFinished {
+            font-size: 2rem;
         }
     }
 }
