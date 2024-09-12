@@ -13,7 +13,8 @@
         cursor: pointer;
         transition: background-color 0.3s ease;
         font-family: var(--font-family-primary), sans-serif;
-        
+        -webkit-tap-highlight-color: transparent;  /* Отключаем серый выделяющий фон на iOS */
+        touch-action: manipulation; /* Для правильной обработки кликов на мобильных устройствах */
     }
 
     .timerButton:hover {
@@ -22,6 +23,7 @@
 
     .timerButton:active {
         background-color: var(--color-active);
+        outline: none;
     }
 }
 
