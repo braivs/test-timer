@@ -40,7 +40,7 @@ export const Timer: React.FC = () => {
     <div className={s.timerContainer}>
       <h1 className={s.timerDisplay}>{formatTime(timeLeft)}</h1>
       <MemoizedControls onStartPause={handleStartPause} onReset={handleReset} isRunning={isRunning}/>
-      <h1 className={s.timeFinished}>{<>Время вышло</>}</h1>
+      <h1 className={s.timeFinished}>{timeLeft === 0 && <>Время вышло</>}</h1>
     </div>
   )
 }
