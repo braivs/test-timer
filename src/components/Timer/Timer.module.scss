@@ -4,12 +4,12 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-family: Calibri, sans-serif;
-    background-color: #292C35;
+    font-family: var(--font-family-primary), sans-serif;
+    background-color: var(--color-main);
 
     .timerDisplay {
         font-size: 4rem;
-        color: #63DAFC;
+        color: var(--color-second);
         margin-bottom: 20px;
     }
 }

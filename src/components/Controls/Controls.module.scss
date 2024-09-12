@@ -5,21 +5,23 @@
     /* Кнопки управления */
     .timerButton {
         padding: 10px 20px;
-        font-size: 1.2rem;
+        font-size: 2rem;
         border: none;
         border-radius: 5px;
-        background-color: #63DAFC;
-        color: black;
+        background-color: var(--color-second);
+        color: var(--color-main);
         cursor: pointer;
         transition: background-color 0.3s ease;
+        font-family: var(--font-family-primary), sans-serif;
+        
     }
 
     .timerButton:hover {
-        background-color: #0056b3;
+        background-color: var(--color-hover);
     }
 
     .timerButton:active {
-        background-color: #004494;
+        background-color: var(--color-active);
     }
 }
 
