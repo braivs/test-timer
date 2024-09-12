@@ -1,5 +1,6 @@
-import React, { memo, useCallback, useState, useEffect, useRef } from 'react';
-import './Timer.css'; // Подключаем стили
+import React, {useCallback, useEffect, useRef, useState} from 'react'
+import './Timer.css'
+import {MemoizedControls} from "./components/Controls/Controls"
 
 const Timer: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState(180); // 3 минуты в секундах
@@ -43,16 +44,5 @@ const Timer: React.FC = () => {
     </div>
   );
 };
-
-const Controls: React.FC<{ onStartPause: () => void, onReset: () => void, isRunning: boolean }> = ({ onStartPause, onReset, isRunning }) => (
-  <div className="controls-container">
-    <button className="timer-button" onClick={onStartPause}>
-      {isRunning ? 'Пауза' : 'Старт'}
-    </button>
-    <button className="timer-button" onClick={onReset}>Сброс</button>
-  </div>
-);
-
-const MemoizedControls = memo(Controls);
 
 export default Timer;

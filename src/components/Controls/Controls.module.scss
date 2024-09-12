@@ -1,0 +1,31 @@
+.controlsContainer {
+    display: flex;
+    gap: 10px;
+
+    /* Кнопки управления */
+    .timerButton {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .timerButton:hover {
+        background-color: #0056b3;
+    }
+
+    .timerButton:active {
+        background-color: #004494;
+    }
+}
+
+@media (max-width: 600px) {
+    .timerButton {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+}
