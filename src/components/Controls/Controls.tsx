@@ -1,11 +1,11 @@
 import React, {memo} from "react"
 import s from './Controls.module.scss'
 
-export const Controls: React.FC<{ onStartPause: () => void, onReset: () => void, isRunning: boolean }> = ({
-                                                                                                            onStartPause,
-                                                                                                            onReset,
-                                                                                                            isRunning
-                                                                                                          }) => (
+export const Controls: React.FC<Props> = ({
+                                            onStartPause,
+                                            onReset,
+                                            isRunning
+                                          }) => (
   <div className={s.controlsContainer}>
     <button className={s.timerButton} onClick={onStartPause}>
       {isRunning ? 'Пауза' : 'Старт'}
@@ -15,3 +15,9 @@ export const Controls: React.FC<{ onStartPause: () => void, onReset: () => void,
 )
 
 export const MemoizedControls = memo(Controls)
+
+type Props = {
+  onStartPause: () => void
+  onReset: () => void
+  isRunning: boolean
+}
