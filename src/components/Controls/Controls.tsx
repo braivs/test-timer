@@ -13,4 +13,5 @@ export const Controls: React.FC<{ onStartPause: () => void, onReset: () => void,
     <button className={s.timerButton} onClick={onReset}>Сброс</button>
   </div>
 )
+
 export const MemoizedControls = memo(Controls)

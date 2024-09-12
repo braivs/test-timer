@@ -1,0 +1,26 @@
+.timerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+
+    .timerDisplay {
+        font-size: 4rem;
+        color: #333;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+    .timerContainer {
+        .timerDisplay {
+            font-size: 3rem;
+        }
+    }
+}
