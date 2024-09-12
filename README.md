@@ -1,27 +1,32 @@
-# Timer tech task
+# Timer Tech Task
 
-## List of task
+## Task Description
 
-Technical task: Implementation of a countdown timer in React / Next.js
-Description:
-It is necessary to develop an application with a countdown timer in React (or Next.js, if preferred). The timer should be able to:
-1 Show the remaining time in MM:SS (minutes:seconds) format.
-2 Update every second.
-3 Stop the countdown when the time is up and display the message "Time is up".
-4 A "Start/Pause" button that allows you to start or pause the timer at any time.
-5 Provide a way to restart the timer with a "Reset" button.
-6 The timer should be limited in operation, with a duration of 3 minutes
-Implementation requirements:
-1 Component structure:
-◦ The application should be divided into components (for example: Timer, Controls, Input).
-◦ Implement timer state management with minimal rerenders.
-2 Working with state and re-renders:
-◦ Optimize component rendering so that there are no extra renders every second.
-3 Interface:
-◦ Control buttons: "Start/Pause" and "Reset".
-◦ Display a countdown on the screen.
-◦ After the countdown is complete, display the message "Time is up".
-4 Additional:
-◦ Using TypeScript is encouraged.
-◦ Beautiful layout is encouraged
-◦ The application should work correctly on both desktop and mobile devices. (Mozila, chrome, safary)
+The goal is to implement a countdown timer using **React** or **Next.js**. The timer should:
+
+1. Display the remaining time in `MM:SS` (minutes:seconds) format.
+2. Update every second.
+3. Stop the countdown when the time is up and display the message "Time is up".
+4. Provide a "Start/Pause" button to control the timer.
+5. Include a "Reset" button to restart the timer.
+6. Be limited to a maximum duration of 3 minutes.
+
+## Implementation Requirements
+
+### 1. Component Structure
+- The application should be divided into reusable components (e.g., `Timer`, `Controls`, `Input`).
+- Ensure efficient state management to minimize unnecessary re-renders.
+
+### 2. State Management & Re-Renders
+- Optimize rendering to prevent excessive component updates (e.g., avoid re-renders every second).
+
+### 3. Interface & Functionality
+- Include control buttons: **"Start/Pause"** and **"Reset"**.
+- Display the countdown timer on the screen.
+- Show a message "Time is up" when the countdown finishes.
+
+### 4. Additional Requirements
+- Using **TypeScript** is encouraged.
+- A well-designed and responsive layout is encouraged.
+- The application should work correctly on both **desktop** and **mobile** devices (Mozilla, Chrome, Safari).
+
